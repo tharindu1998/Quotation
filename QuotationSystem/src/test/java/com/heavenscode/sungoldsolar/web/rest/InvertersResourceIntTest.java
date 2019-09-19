@@ -1,11 +1,11 @@
-package com.heavenscode.sungoldsolar.web.rest;
+package com.freakz.sungoldsolar.web.rest;
 
-import com.heavenscode.sungoldsolar.SunGoldSolarApp;
+import com.freakz.sungoldsolar.SunGoldSolarApp;
 
-import com.heavenscode.sungoldsolar.domain.Inverters;
-import com.heavenscode.sungoldsolar.repository.InvertersRepository;
-import com.heavenscode.sungoldsolar.repository.search.InvertersSearchRepository;
-import com.heavenscode.sungoldsolar.web.rest.errors.ExceptionTranslator;
+import com.freakz.sungoldsolar.domain.Inverters;
+import com.freakz.sungoldsolar.repository.InvertersRepository;
+import com.freakz.sungoldsolar.repository.search.InvertersSearchRepository;
+import com.freakz.sungoldsolar.web.rest.errors.ExceptionTranslator;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -24,7 +24,7 @@ import java.util.Collections;
 import java.util.List;
 
 
-import static com.heavenscode.sungoldsolar.web.rest.TestUtil.createFormattingConversionService;
+import static com.freakz.sungoldsolar.web.rest.TestUtil.createFormattingConversionService;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.elasticsearch.index.query.QueryBuilders.queryStringQuery;
 import static org.hamcrest.Matchers.hasItem;
@@ -57,9 +57,9 @@ public class InvertersResourceIntTest {
     private InvertersRepository invertersRepository;
 
     /**
-     * This repository is mocked in the com.heavenscode.sungoldsolar.repository.search test package.
+     * This repository is mocked in the com.freakz.sungoldsolar.repository.search test package.
      *
-     * @see com.heavenscode.sungoldsolar.repository.search.InvertersSearchRepositoryMockConfiguration
+     * @see com.freakz.sungoldsolar.repository.search.InvertersSearchRepositoryMockConfiguration
      */
     @Autowired
     private InvertersSearchRepository mockInvertersSearchRepository;

@@ -1,8 +1,8 @@
-package com.heavenscode.sungoldsolar.security;
+package com.freakz.sungoldsolar.security;
 
-import com.heavenscode.sungoldsolar.SunGoldSolarApp;
-import com.heavenscode.sungoldsolar.domain.User;
-import com.heavenscode.sungoldsolar.repository.UserRepository;
+import com.freakz.sungoldsolar.SunGoldSolarApp;
+import com.freakz.sungoldsolar.domain.User;
+import com.freakz.sungoldsolar.repository.UserRepository;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Before;

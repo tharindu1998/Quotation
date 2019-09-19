@@ -1,7 +1,7 @@
-package com.heavenscode.sungoldsolar.web.rest;
+package com.freakz.sungoldsolar.web.rest;
 
-import com.heavenscode.sungoldsolar.SunGoldSolarApp;
-import com.heavenscode.sungoldsolar.web.rest.vm.LoggerVM;
+import com.freakz.sungoldsolar.SunGoldSolarApp;
+import com.freakz.sungoldsolar.web.rest.vm.LoggerVM;
 import ch.qos.logback.classic.AsyncAppender;
 import ch.qos.logback.classic.LoggerContext;
 import org.junit.Before;

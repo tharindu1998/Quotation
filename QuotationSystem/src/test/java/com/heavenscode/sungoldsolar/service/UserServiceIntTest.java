@@ -1,12 +1,12 @@
-package com.heavenscode.sungoldsolar.service;
+package com.freakz.sungoldsolar.service;
 
-import com.heavenscode.sungoldsolar.SunGoldSolarApp;
-import com.heavenscode.sungoldsolar.config.Constants;
-import com.heavenscode.sungoldsolar.domain.User;
-import com.heavenscode.sungoldsolar.repository.search.UserSearchRepository;
-import com.heavenscode.sungoldsolar.repository.UserRepository;
-import com.heavenscode.sungoldsolar.service.dto.UserDTO;
-import com.heavenscode.sungoldsolar.service.util.RandomUtil;
+import com.freakz.sungoldsolar.SunGoldSolarApp;
+import com.freakz.sungoldsolar.config.Constants;
+import com.freakz.sungoldsolar.domain.User;
+import com.freakz.sungoldsolar.repository.search.UserSearchRepository;
+import com.freakz.sungoldsolar.repository.UserRepository;
+import com.freakz.sungoldsolar.service.dto.UserDTO;
+import com.freakz.sungoldsolar.service.util.RandomUtil;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Before;
@@ -44,9 +44,9 @@ public class UserServiceIntTest {
     private UserService userService;
 
     /**
-     * This repository is mocked in the com.heavenscode.sungoldsolar.repository.search test package.
+     * This repository is mocked in the com.freakz.sungoldsolar.repository.search test package.
      *
-     * @see com.heavenscode.sungoldsolar.repository.search.UserSearchRepositoryMockConfiguration
+     * @see com.freakz.sungoldsolar.repository.search.UserSearchRepositoryMockConfiguration
      */
     @Autowired
     private UserSearchRepository mockUserSearchRepository;

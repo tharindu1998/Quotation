@@ -1,6 +1,6 @@
-package com.heavenscode.sungoldsolar.web.rest.errors;
+package com.freakz.sungoldsolar.web.rest.errors;
 
-import com.heavenscode.sungoldsolar.SunGoldSolarApp;
+import com.freakz.sungoldsolar.SunGoldSolarApp;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,4 +1,4 @@
-package com.heavenscode.sungoldsolar.config;
+package com.freakz.sungoldsolar.config;
 
 import com.codahale.metrics.MetricRegistry;
 import com.codahale.metrics.servlet.InstrumentedFilter;

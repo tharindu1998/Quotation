@@ -1,13 +1,13 @@
 {
   "generator-jhipster": {
     "promptValues": {
-      "packageName": "com.heavenscode.sungoldsolar"
+      "packageName": "com.freakz.sungoldsolar"
     },
     "jhipsterVersion": "5.3.4",
     "applicationType": "monolith",
     "baseName": "SunGoldSolar",
-    "packageName": "com.heavenscode.sungoldsolar",
-    "packageFolder": "com/heavenscode/sungoldsolar",
+    "packageName": "com.freakz.sungoldsolar",
+    "packageFolder": "com/freakz/sungoldsolar",
     "serverPort": "8080",
     "authenticationType": "jwt",
     "cacheProvider": "ehcache",

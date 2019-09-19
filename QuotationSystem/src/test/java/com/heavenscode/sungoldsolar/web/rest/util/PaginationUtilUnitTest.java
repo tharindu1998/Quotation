@@ -1,4 +1,4 @@
-package com.heavenscode.sungoldsolar.web.rest.util;
+package com.freakz.sungoldsolar.web.rest.util;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;

@@ -1,8 +1,8 @@
-package com.heavenscode.sungoldsolar.service;
-import com.heavenscode.sungoldsolar.config.Constants;
+package com.freakz.sungoldsolar.service;
+import com.freakz.sungoldsolar.config.Constants;
 
-import com.heavenscode.sungoldsolar.SunGoldSolarApp;
-import com.heavenscode.sungoldsolar.domain.User;
+import com.freakz.sungoldsolar.SunGoldSolarApp;
+import com.freakz.sungoldsolar.domain.User;
 import io.github.jhipster.config.JHipsterProperties;
 import org.junit.Before;
 import org.junit.Test;

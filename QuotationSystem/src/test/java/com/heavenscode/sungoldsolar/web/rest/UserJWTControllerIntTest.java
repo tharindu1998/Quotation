@@ -1,11 +1,11 @@
-package com.heavenscode.sungoldsolar.web.rest;
+package com.freakz.sungoldsolar.web.rest;
 
-import com.heavenscode.sungoldsolar.SunGoldSolarApp;
-import com.heavenscode.sungoldsolar.domain.User;
-import com.heavenscode.sungoldsolar.repository.UserRepository;
-import com.heavenscode.sungoldsolar.security.jwt.TokenProvider;
-import com.heavenscode.sungoldsolar.web.rest.errors.ExceptionTranslator;
-import com.heavenscode.sungoldsolar.web.rest.vm.LoginVM;
+import com.freakz.sungoldsolar.SunGoldSolarApp;
+import com.freakz.sungoldsolar.domain.User;
+import com.freakz.sungoldsolar.repository.UserRepository;
+import com.freakz.sungoldsolar.security.jwt.TokenProvider;
+import com.freakz.sungoldsolar.web.rest.errors.ExceptionTranslator;
+import com.freakz.sungoldsolar.web.rest.vm.LoginVM;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

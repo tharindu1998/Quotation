@@ -1,11 +1,11 @@
-package com.heavenscode.sungoldsolar.web.rest;
+package com.freakz.sungoldsolar.web.rest;
 
-import com.heavenscode.sungoldsolar.SunGoldSolarApp;
+import com.freakz.sungoldsolar.SunGoldSolarApp;
 
-import com.heavenscode.sungoldsolar.domain.Clients;
-import com.heavenscode.sungoldsolar.repository.ClientsRepository;
-import com.heavenscode.sungoldsolar.repository.search.ClientsSearchRepository;
-import com.heavenscode.sungoldsolar.web.rest.errors.ExceptionTranslator;
+import com.freakz.sungoldsolar.domain.Clients;
+import com.freakz.sungoldsolar.repository.ClientsRepository;
+import com.freakz.sungoldsolar.repository.search.ClientsSearchRepository;
+import com.freakz.sungoldsolar.web.rest.errors.ExceptionTranslator;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -26,7 +26,7 @@ import java.util.Collections;
 import java.util.List;
 
 
-import static com.heavenscode.sungoldsolar.web.rest.TestUtil.createFormattingConversionService;
+import static com.freakz.sungoldsolar.web.rest.TestUtil.createFormattingConversionService;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.elasticsearch.index.query.QueryBuilders.queryStringQuery;
 import static org.hamcrest.Matchers.hasItem;
@@ -34,7 +34,7 @@ import static org.mockito.Mockito.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-import com.heavenscode.sungoldsolar.domain.enumeration.Designation;
+import com.freakz.sungoldsolar.domain.enumeration.Designation;
 /**
  * Test class for the ClientsResource REST controller.
  *
@@ -66,9 +66,9 @@ public class ClientsResourceIntTest {
     private ClientsRepository clientsRepository;
 
     /**
-     * This repository is mocked in the com.heavenscode.sungoldsolar.repository.search test package.
+     * This repository is mocked in the com.freakz.sungoldsolar.repository.search test package.
      *
-     * @see com.heavenscode.sungoldsolar.repository.search.ClientsSearchRepositoryMockConfiguration
+     * @see com.freakz.sungoldsolar.repository.search.ClientsSearchRepositoryMockConfiguration
      */
     @Autowired
     private ClientsSearchRepository mockClientsSearchRepository;

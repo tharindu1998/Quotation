@@ -1,4 +1,4 @@
-package com.heavenscode.sungoldsolar.security;
+package com.freakz.sungoldsolar.security;
 
 import org.junit.Test;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

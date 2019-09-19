@@ -1,10 +1,10 @@
-package com.heavenscode.sungoldsolar.web.rest;
+package com.freakz.sungoldsolar.web.rest;
 
-import com.heavenscode.sungoldsolar.SunGoldSolarApp;
-import com.heavenscode.sungoldsolar.config.audit.AuditEventConverter;
-import com.heavenscode.sungoldsolar.domain.PersistentAuditEvent;
-import com.heavenscode.sungoldsolar.repository.PersistenceAuditEventRepository;
-import com.heavenscode.sungoldsolar.service.AuditEventService;
+import com.freakz.sungoldsolar.SunGoldSolarApp;
+import com.freakz.sungoldsolar.config.audit.AuditEventConverter;
+import com.freakz.sungoldsolar.domain.PersistentAuditEvent;
+import com.freakz.sungoldsolar.repository.PersistenceAuditEventRepository;
+import com.freakz.sungoldsolar.service.AuditEventService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

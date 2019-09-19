@@ -1,19 +1,19 @@
-package com.heavenscode.sungoldsolar.web.rest;
+package com.freakz.sungoldsolar.web.rest;
 
-import com.heavenscode.sungoldsolar.SunGoldSolarApp;
-import com.heavenscode.sungoldsolar.config.Constants;
-import com.heavenscode.sungoldsolar.domain.Authority;
-import com.heavenscode.sungoldsolar.domain.User;
-import com.heavenscode.sungoldsolar.repository.AuthorityRepository;
-import com.heavenscode.sungoldsolar.repository.UserRepository;
-import com.heavenscode.sungoldsolar.security.AuthoritiesConstants;
-import com.heavenscode.sungoldsolar.service.MailService;
-import com.heavenscode.sungoldsolar.service.UserService;
-import com.heavenscode.sungoldsolar.service.dto.PasswordChangeDTO;
-import com.heavenscode.sungoldsolar.service.dto.UserDTO;
-import com.heavenscode.sungoldsolar.web.rest.errors.ExceptionTranslator;
-import com.heavenscode.sungoldsolar.web.rest.vm.KeyAndPasswordVM;
-import com.heavenscode.sungoldsolar.web.rest.vm.ManagedUserVM;
+import com.freakz.sungoldsolar.SunGoldSolarApp;
+import com.freakz.sungoldsolar.config.Constants;
+import com.freakz.sungoldsolar.domain.Authority;
+import com.freakz.sungoldsolar.domain.User;
+import com.freakz.sungoldsolar.repository.AuthorityRepository;
+import com.freakz.sungoldsolar.repository.UserRepository;
+import com.freakz.sungoldsolar.security.AuthoritiesConstants;
+import com.freakz.sungoldsolar.service.MailService;
+import com.freakz.sungoldsolar.service.UserService;
+import com.freakz.sungoldsolar.service.dto.PasswordChangeDTO;
+import com.freakz.sungoldsolar.service.dto.UserDTO;
+import com.freakz.sungoldsolar.web.rest.errors.ExceptionTranslator;
+import com.freakz.sungoldsolar.web.rest.vm.KeyAndPasswordVM;
+import com.freakz.sungoldsolar.web.rest.vm.ManagedUserVM;
 import org.apache.commons.lang3.RandomStringUtils;
 
 import org.junit.Before;

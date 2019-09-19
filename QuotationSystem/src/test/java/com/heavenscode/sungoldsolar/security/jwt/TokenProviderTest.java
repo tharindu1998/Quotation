@@ -1,6 +1,6 @@
-package com.heavenscode.sungoldsolar.security.jwt;
+package com.freakz.sungoldsolar.security.jwt;
 
-import com.heavenscode.sungoldsolar.security.AuthoritiesConstants;
+import com.freakz.sungoldsolar.security.AuthoritiesConstants;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

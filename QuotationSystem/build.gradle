@@ -48,17 +48,17 @@ dependencyManagement {
 
 defaultTasks 'bootRun'
 
-group = 'com.heavenscode.sungoldsolar'
+group = 'com.freakz.sungoldsolar'
 version = '0.1.1-SNAPSHOT'
 
 description = ''
 
 bootWar {
-   mainClassName = 'com.heavenscode.sungoldsolar.SunGoldSolarApp'
+   mainClassName = 'com.freakz.sungoldsolar.SunGoldSolarApp'
 }
 
 bootJar {
-    mainClassName = 'com.heavenscode.sungoldsolar.SunGoldSolarApp'
+    mainClassName = 'com.freakz.sungoldsolar.SunGoldSolarApp'
 }
 
 
@@ -67,7 +67,7 @@ war {
 }
 
 springBoot {
-    mainClassName = 'com.heavenscode.sungoldsolar.SunGoldSolarApp'
+    mainClassName = 'com.freakz.sungoldsolar.SunGoldSolarApp'
     buildInfo()
 }
 

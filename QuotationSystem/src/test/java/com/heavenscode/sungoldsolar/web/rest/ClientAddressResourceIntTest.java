@@ -1,11 +1,11 @@
-package com.heavenscode.sungoldsolar.web.rest;
+package com.freakz.sungoldsolar.web.rest;
 
-import com.heavenscode.sungoldsolar.SunGoldSolarApp;
+import com.freakz.sungoldsolar.SunGoldSolarApp;
 
-import com.heavenscode.sungoldsolar.domain.ClientAddress;
-import com.heavenscode.sungoldsolar.repository.ClientAddressRepository;
-import com.heavenscode.sungoldsolar.repository.search.ClientAddressSearchRepository;
-import com.heavenscode.sungoldsolar.web.rest.errors.ExceptionTranslator;
+import com.freakz.sungoldsolar.domain.ClientAddress;
+import com.freakz.sungoldsolar.repository.ClientAddressRepository;
+import com.freakz.sungoldsolar.repository.search.ClientAddressSearchRepository;
+import com.freakz.sungoldsolar.web.rest.errors.ExceptionTranslator;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -24,7 +24,7 @@ import java.util.Collections;
 import java.util.List;
 
 
-import static com.heavenscode.sungoldsolar.web.rest.TestUtil.createFormattingConversionService;
+import static com.freakz.sungoldsolar.web.rest.TestUtil.createFormattingConversionService;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.elasticsearch.index.query.QueryBuilders.queryStringQuery;
 import static org.hamcrest.Matchers.hasItem;
@@ -57,9 +57,9 @@ public class ClientAddressResourceIntTest {
     private ClientAddressRepository clientAddressRepository;
 
     /**
-     * This repository is mocked in the com.heavenscode.sungoldsolar.repository.search test package.
+     * This repository is mocked in the com.freakz.sungoldsolar.repository.search test package.
      *
-     * @see com.heavenscode.sungoldsolar.repository.search.ClientAddressSearchRepositoryMockConfiguration
+     * @see com.freakz.sungoldsolar.repository.search.ClientAddressSearchRepositoryMockConfiguration
      */
     @Autowired
     private ClientAddressSearchRepository mockClientAddressSearchRepository;

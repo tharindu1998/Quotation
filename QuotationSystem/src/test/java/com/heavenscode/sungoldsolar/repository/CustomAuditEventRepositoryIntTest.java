@@ -1,9 +1,9 @@
-package com.heavenscode.sungoldsolar.repository;
+package com.freakz.sungoldsolar.repository;
 
-import com.heavenscode.sungoldsolar.SunGoldSolarApp;
-import com.heavenscode.sungoldsolar.config.Constants;
-import com.heavenscode.sungoldsolar.config.audit.AuditEventConverter;
-import com.heavenscode.sungoldsolar.domain.PersistentAuditEvent;
+import com.freakz.sungoldsolar.SunGoldSolarApp;
+import com.freakz.sungoldsolar.config.Constants;
+import com.freakz.sungoldsolar.config.audit.AuditEventConverter;
+import com.freakz.sungoldsolar.domain.PersistentAuditEvent;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -22,7 +22,7 @@ import java.util.List;
 import java.util.Map;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static com.heavenscode.sungoldsolar.repository.CustomAuditEventRepository.EVENT_DATA_COLUMN_MAX_LENGTH;
+import static com.freakz.sungoldsolar.repository.CustomAuditEventRepository.EVENT_DATA_COLUMN_MAX_LENGTH;
 
 /**
  * Test class for the CustomAuditEventRepository class.

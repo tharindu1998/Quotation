@@ -1,4 +1,4 @@
-package com.heavenscode.sungoldsolar.web.rest.errors;
+package com.freakz.sungoldsolar.web.rest.errors;
 
 import org.springframework.dao.ConcurrencyFailureException;
 import org.springframework.http.HttpStatus;

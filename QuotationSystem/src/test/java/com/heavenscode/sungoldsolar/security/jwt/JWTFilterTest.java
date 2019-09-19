@@ -1,6 +1,6 @@
-package com.heavenscode.sungoldsolar.security.jwt;
+package com.freakz.sungoldsolar.security.jwt;
 
-import com.heavenscode.sungoldsolar.security.AuthoritiesConstants;
+import com.freakz.sungoldsolar.security.AuthoritiesConstants;
 import io.github.jhipster.config.JHipsterProperties;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;

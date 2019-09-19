@@ -1,4 +1,4 @@
-package com.heavenscode.sungoldsolar.repository.search;
+package com.freakz.sungoldsolar.repository.search;
 
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Configuration;
