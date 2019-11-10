@@ -6,15 +6,15 @@ import { SunGoldSolarQuotationModule } from './quotation/quotation.module';
 import { SunGoldSolarInvertersModule } from './inverters/inverters.module';
 import { SunGoldSolarPanelsModule } from './panels/panels.module';
 import { DatasheetsComponent } from './datasheets/datasheets.component';
-import {RouterModule, Routes} from "@angular/router";
+import { RouterModule, Routes } from '@angular/router';
 /* jhipster-needle-add-entity-module-import - JHipster will add entity modules imports here */
 
-
-export const entity: Routes =
+export const entity: Routes = [
     {
         path: 'datasheets',
         component: DatasheetsComponent
-    };
+    }
+];
 
 @NgModule({
     // prettier-ignore

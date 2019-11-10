@@ -10,7 +10,7 @@ import {
     clientsRoute,
     clientsPopupRoute
 } from './';
-import {SunGoldSolarSharedModule} from "../../shared/shared.module";
+import { SunGoldSolarSharedModule } from '../../shared/shared.module';
 
 const ENTITY_STATES = [...clientsRoute, ...clientsPopupRoute];
 
@@ -26,4 +26,4 @@ const ENTITY_STATES = [...clientsRoute, ...clientsPopupRoute];
     entryComponents: [ClientsComponent, ClientsUpdateComponent, ClientsDeleteDialogComponent, ClientsDeletePopupComponent],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class SunGoldSolarClientsModule { }
+export class SunGoldSolarClientsModule {}

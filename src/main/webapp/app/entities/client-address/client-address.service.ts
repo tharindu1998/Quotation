@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 
 import { SERVER_API_URL } from 'app/app.constants';
 import { IClientAddress } from 'app/shared/model/client-address.model';
-import {createRequestOption} from "../../shared/util/request-util";
+import { createRequestOption } from '../../shared/util/request-util';
 
 type EntityResponseType = HttpResponse<IClientAddress>;
 type EntityArrayResponseType = HttpResponse<IClientAddress[]>;
@@ -14,7 +14,7 @@ export class ClientAddressService {
     private resourceUrl = SERVER_API_URL + 'api/client-addresses';
     private resourceSearchUrl = SERVER_API_URL + 'api/_search/client-addresses';
 
-    constructor(private http: HttpClient) { }
+    constructor(private http: HttpClient) {}
 
     create(clientAddress: IClientAddress): Observable<EntityResponseType> {
         return this.http.post<IClientAddress>(this.resourceUrl, clientAddress, { observe: 'response' });
@@ -42,10 +42,7 @@ export class ClientAddressService {
         return this.http.get<IClientAddress[]>(this.resourceSearchUrl, { params: options, observe: 'response' });
     }
 
-
     getAllAddressesByClientId(req): Observable<any> {
         return this.http.get(SERVER_API_URL + 'api/client-addresses/_search/' + req);
     }
-
-
 }

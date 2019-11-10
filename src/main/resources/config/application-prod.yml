@@ -16,7 +16,7 @@
 logging:
     level:
         ROOT: INFO
-        com.freakz.sungoldsolar: INFO
+        com.heavenscode.sungoldsolar: INFO
         io.github.jhipster: INFO
 
 eureka:

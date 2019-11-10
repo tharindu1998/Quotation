@@ -10,7 +10,7 @@ import { ClientsService } from './clients.service';
 
 @Component({
     selector: 'jhi-clients',
-    templateUrl: './clients.component.html',
+    templateUrl: './clients.component.html'
     // styles:['.table tr:hover{ background-color: #FE5555;    }']
 })
 export class ClientsComponent implements OnInit, OnDestroy {

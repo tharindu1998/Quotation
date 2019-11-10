@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 
 import { SERVER_API_URL } from 'app/app.constants';
 import { IInverters } from 'app/shared/model/inverters.model';
-import {createRequestOption} from "../../shared/util/request-util";
+import { createRequestOption } from '../../shared/util/request-util';
 
 type EntityResponseType = HttpResponse<IInverters>;
 type EntityArrayResponseType = HttpResponse<IInverters[]>;

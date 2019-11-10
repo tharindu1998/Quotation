@@ -1,11 +1,11 @@
-import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
-import {IQuotation} from '../../../shared/model/quotation.model';
-import {ClientsService} from '../../clients/clients.service';
-import {Clients, Designation, IClients} from '../../../shared/model/clients.model';
-import {ClientAddressService} from '../../client-address/client-address.service';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { IQuotation } from '../../../shared/model/quotation.model';
+import { ClientsService } from '../../clients/clients.service';
+import { Clients, Designation, IClients } from '../../../shared/model/clients.model';
+import { ClientAddressService } from '../../client-address/client-address.service';
 import * as moment from 'moment';
-import {ClientAddress} from '../../../shared/model/client-address.model';
+import { ClientAddress } from '../../../shared/model/client-address.model';
 
 @Component({
     selector: 'jhi-cost-print',
@@ -14,27 +14,26 @@ import {ClientAddress} from '../../../shared/model/client-address.model';
 })
 export class CostPrintComponent implements OnInit {
     quotation: IQuotation;
-    private client: Clients;
-    private designation: Designation;
-    private clientAddress: any;
+    client: Clients;
+    designation: Designation;
+    clientAddress: any;
 
-    constructor(private activatedRoute: ActivatedRoute,
-                private clientsService: ClientsService,
-                private clientAddresses: ClientAddressService) {
+    constructor(
+        private activatedRoute: ActivatedRoute,
+        private clientsService: ClientsService,
+        private clientAddresses: ClientAddressService
+    ) {
         this.client = new Clients('', null, '', '', <Designation>'', '', '');
         this.clientAddress = new ClientAddress('', '', '', '', 0);
-
     }
 
     ngOnInit() {
-        this.activatedRoute.data.subscribe(({quotation}) => {
+        this.activatedRoute.data.subscribe(({ quotation }) => {
             this.quotation = quotation;
 
             this.getClientInfo();
             this.getClientAddress();
-
         });
-
     }
 
     getClientInfo() {
@@ -42,7 +41,6 @@ export class CostPrintComponent implements OnInit {
             this.client = res.body;
             // this.designation = this.client.designation;
             console.log(this.client);
-
         });
     }
 
@@ -51,9 +49,6 @@ export class CostPrintComponent implements OnInit {
             this.clientAddress = res.body;
             // this.designation = this.client.designation;
             console.log(this.clientAddress);
-
         });
-
     }
-
 }

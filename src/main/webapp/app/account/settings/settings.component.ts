@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {AccountService} from "../../core/auth/account.service";
-import {Principal} from "../../core/auth/principal.service";
-
+import { AccountService } from '../../core/auth/account.service';
+import { Principal } from '../../core/auth/principal.service';
 
 @Component({
     selector: 'jhi-settings',

@@ -10,7 +10,7 @@ import {
     quotationRoute,
     quotationPopupRoute
 } from './';
-import {SunGoldSolarSharedModule} from "../../shared/shared.module";
+import { SunGoldSolarSharedModule } from '../../shared/shared.module';
 
 const ENTITY_STATES = [...quotationRoute, ...quotationPopupRoute];
 

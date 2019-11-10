@@ -7,7 +7,7 @@ import { map } from 'rxjs/operators';
 
 import { SERVER_API_URL } from 'app/app.constants';
 import { IClients } from 'app/shared/model/clients.model';
-import {createRequestOption} from "../../shared/util/request-util";
+import { createRequestOption } from '../../shared/util/request-util';
 
 type EntityResponseType = HttpResponse<IClients>;
 type EntityArrayResponseType = HttpResponse<IClients[]>;

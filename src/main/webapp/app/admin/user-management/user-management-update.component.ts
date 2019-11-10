@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import {User} from "../../core/user/user.model";
-import {UserService} from "../../core/user/user.service";
-
+import { User } from '../../core/user/user.model';
+import { UserService } from '../../core/user/user.service';
 
 @Component({
     selector: 'jhi-user-mgmt-update',

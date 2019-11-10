@@ -15,7 +15,7 @@ export class ClientAddressUpdateComponent implements OnInit {
     isSaving: boolean;
     clientId: any;
 
-    constructor(private clientAddressService: ClientAddressService, private activatedRoute: ActivatedRoute) { }
+    constructor(private clientAddressService: ClientAddressService, private activatedRoute: ActivatedRoute) {}
 
     ngOnInit() {
         this.isSaving = false;
@@ -23,9 +23,10 @@ export class ClientAddressUpdateComponent implements OnInit {
             this.clientAddress = clientAddress;
         });
 
-        this._clientAddress.clientId = this.activatedRoute.snapshot && this.activatedRoute.snapshot.params['clientId']
-            ? this.activatedRoute.snapshot.params['clientId']
-            : '';
+        this._clientAddress.clientId =
+            this.activatedRoute.snapshot && this.activatedRoute.snapshot.params['clientId']
+                ? this.activatedRoute.snapshot.params['clientId']
+                : '';
     }
 
     previousState() {

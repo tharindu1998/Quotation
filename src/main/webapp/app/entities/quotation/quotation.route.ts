@@ -10,7 +10,7 @@ import { QuotationDetailComponent } from './quotation-detail.component';
 import { QuotationUpdateComponent } from './quotation-update.component';
 import { QuotationDeletePopupComponent } from './quotation-delete-dialog.component';
 import { IQuotation } from 'app/shared/model/quotation.model';
-import {UserRouteAccessService} from "../../core/auth/user-route-access-service";
+import { UserRouteAccessService } from '../../core/auth/user-route-access-service';
 
 @Injectable({ providedIn: 'root' })
 export class QuotationResolve implements Resolve<IQuotation> {
@@ -58,7 +58,8 @@ export const quotationRoute: Routes = [
             pageTitle: 'Quotations'
         },
         canActivate: [UserRouteAccessService]
-    },   {
+    },
+    {
         path: 'quotation/new/:clientId/:addressId',
         component: QuotationUpdateComponent,
         resolve: {

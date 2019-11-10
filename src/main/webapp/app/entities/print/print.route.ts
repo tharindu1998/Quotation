@@ -1,18 +1,17 @@
-import {ActivatedRouteSnapshot, Resolve, RouterStateSnapshot, Routes} from "@angular/router";
-import {PrintComponent} from "./print.component";
-import {UserRouteAccessService} from "../../core/auth/user-route-access-service";
-import {CostPrintComponent} from "./cost-print/cost-print.component";
-import {Injectable} from "@angular/core";
-import {IQuotation, Quotation} from "../../shared/model/quotation.model";
-import {QuotationService} from "../quotation/quotation.service";
-import {HttpResponse} from "@angular/common/http";
-import {of} from 'rxjs';
-import {map} from 'rxjs/operators';
+import { ActivatedRouteSnapshot, Resolve, RouterStateSnapshot, Routes } from '@angular/router';
+import { PrintComponent } from './print.component';
+import { UserRouteAccessService } from '../../core/auth/user-route-access-service';
+import { CostPrintComponent } from './cost-print/cost-print.component';
+import { Injectable } from '@angular/core';
+import { IQuotation, Quotation } from '../../shared/model/quotation.model';
+import { QuotationService } from '../quotation/quotation.service';
+import { HttpResponse } from '@angular/common/http';
+import { of } from 'rxjs';
+import { map } from 'rxjs/operators';
 
-@Injectable({providedIn: 'root'})
+@Injectable({ providedIn: 'root' })
 export class QuotationResolve implements Resolve<IQuotation> {
-    constructor(private service: QuotationService) {
-    }
+    constructor(private service: QuotationService) {}
 
     resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
         const id = route.params['quotationId'] ? route.params['quotationId'] : null;
@@ -22,7 +21,6 @@ export class QuotationResolve implements Resolve<IQuotation> {
         return of(new Quotation());
     }
 }
-
 
 export const printRoutes: Routes = [
     {
@@ -50,6 +48,4 @@ export const printRoutes: Routes = [
         },
         canActivate: [UserRouteAccessService]
     }
-
 ];
-

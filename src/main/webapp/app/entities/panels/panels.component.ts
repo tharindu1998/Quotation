@@ -6,7 +6,7 @@ import { JhiEventManager, JhiAlertService } from 'ng-jhipster';
 
 import { IPanels } from 'app/shared/model/panels.model';
 import { PanelsService } from './panels.service';
-import {Principal} from "../../core/auth/principal.service";
+import { Principal } from '../../core/auth/principal.service';
 
 @Component({
     selector: 'jhi-panels',

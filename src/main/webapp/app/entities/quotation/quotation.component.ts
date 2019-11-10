@@ -6,7 +6,7 @@ import { JhiEventManager, JhiAlertService } from 'ng-jhipster';
 
 import { IQuotation } from 'app/shared/model/quotation.model';
 import { QuotationService } from './quotation.service';
-import {Principal} from "../../core/auth/principal.service";
+import { Principal } from '../../core/auth/principal.service';
 
 @Component({
     selector: 'jhi-quotation',

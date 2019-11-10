@@ -17,18 +17,18 @@ export class ClientAddressComponent implements OnInit, OnDestroy {
     currentAccount: any;
     eventSubscriber: Subscription;
     currentSearch: string;
- 
+
     constructor(
         private clientAddressService: ClientAddressService,
         private jhiAlertService: JhiAlertService,
         private eventManager: JhiEventManager,
         private activatedRoute: ActivatedRoute,
-        private principal: Principal, 
+        private principal: Principal
     ) {
         this.currentSearch =
             this.activatedRoute.snapshot && this.activatedRoute.snapshot.params['search']
                 ? this.activatedRoute.snapshot.params['search']
-                : ''; 
+                : '';
     }
 
     loadAll() {

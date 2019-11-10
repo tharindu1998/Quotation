@@ -5,9 +5,11 @@ export const enum Designation {
     Mr = 'Mr',
     Miss = 'Miss',
     Dr = 'Dr',
-    Rev = 'Rev',  Sir = 'Sir',
-    Org = 'Org',  CO = 'CO', Dept = 'Dept',
-
+    Rev = 'Rev',
+    Sir = 'Sir',
+    Org = 'Org',
+    CO = 'CO',
+    Dept = 'Dept'
 }
 
 export interface IClients {

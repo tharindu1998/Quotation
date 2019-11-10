@@ -72,10 +72,6 @@ export const clientAddressRoute: Routes = [
         canActivate: [UserRouteAccessService]
     },
 
-
-
-
-    
     {
         path: 'client-address/:id/edit',
         component: ClientAddressUpdateComponent,

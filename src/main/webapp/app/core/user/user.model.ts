@@ -17,20 +17,22 @@ export interface IUser {
 }
 
 export class User implements IUser {
-    constructor(public id?: any,
-                public login?: string,
-                public firstName?: string,
-                public lastName?: string,
-                public email?: string,
-                public activated?: boolean,
-                public langKey?: string,
-                public authorities?: any[],
-                public createdBy?: string,
-                public createdDate?: Date,
-                public lastModifiedBy?: string,
-                public lastModifiedDate?: Date,
-                public password?: string,
-                public telephone?: string) {
+    constructor(
+        public id?: any,
+        public login?: string,
+        public firstName?: string,
+        public lastName?: string,
+        public email?: string,
+        public activated?: boolean,
+        public langKey?: string,
+        public authorities?: any[],
+        public createdBy?: string,
+        public createdDate?: Date,
+        public lastModifiedBy?: string,
+        public lastModifiedDate?: Date,
+        public password?: string,
+        public telephone?: string
+    ) {
         this.id = id ? id : null;
         this.login = login ? login : null;
         this.firstName = firstName ? firstName : null;
@@ -45,6 +47,6 @@ export class User implements IUser {
         this.lastModifiedDate = lastModifiedDate ? lastModifiedDate : null;
         this.password = password ? password : null;
 
-        this.telephone = telephone ? telephone : null
+        this.telephone = telephone ? telephone : null;
     }
 }

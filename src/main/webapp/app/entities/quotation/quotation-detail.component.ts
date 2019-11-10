@@ -1,7 +1,7 @@
-import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
-import {IQuotation} from 'app/shared/model/quotation.model';
+import { IQuotation } from 'app/shared/model/quotation.model';
 
 @Component({
     selector: 'jhi-quotation-detail',
@@ -12,11 +12,10 @@ export class QuotationDetailComponent implements OnInit {
     readyToPrint = true;
     quotationId = '';
 
-    constructor(private activatedRoute: ActivatedRoute) {
-    }
+    constructor(private activatedRoute: ActivatedRoute) {}
 
     ngOnInit() {
-        this.activatedRoute.data.subscribe(({quotation}) => {
+        this.activatedRoute.data.subscribe(({ quotation }) => {
             this.quotation = quotation;
             this.quotationId = quotation.id;
             this.readyToPrint = false;

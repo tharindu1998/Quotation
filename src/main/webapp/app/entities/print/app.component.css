@@ -15,7 +15,6 @@
     -moz-background-size: contain;
     -o-background-size: contain;
     background-size: contain;
-
 }
 
 p {
@@ -57,9 +56,13 @@ p {
     cursor: pointer;
 }
 
-*[contenteditable]:hover, *[contenteditable]:focus, td:hover *[contenteditable], td:focus *[contenteditable], img.hover {
-    background: #DEF;
-    box-shadow: 0 0 1em 0.5em #DEF;
+*[contenteditable]:hover,
+*[contenteditable]:focus,
+td:hover *[contenteditable],
+td:focus *[contenteditable],
+img.hover {
+    background: #def;
+    box-shadow: 0 0 1em 0.5em #def;
 }
 
 span[contenteditable] {
@@ -88,21 +91,23 @@ table {
     border-spacing: 2px;
 }
 
-th, td {
+th,
+td {
     border-width: 1px;
     padding: 0.5em;
     position: relative;
     text-align: left;
 }
 
-th, td {
+th,
+td {
     border-radius: 0.25em;
     border-style: solid;
 }
 
 th {
     background: #fff;
-    border-color: #BBB;
+    border-color: #bbb;
 }
 
 td {
@@ -132,7 +137,7 @@ body {
 }
 
 body {
-    background: #FFF;
+    background: #fff;
     border-radius: 1px;
     box-shadow: 0 0 1in -0.1in rgba(0, 0, 0, 1);
 }
@@ -144,7 +149,7 @@ body {
     overflow: hidden;
     padding: 0.2in;
     width: 8.27in;
-    background: #FFF;
+    background: #fff;
     border-radius: 1px;
     box-shadow: 0 0 1in -0.1in rgba(0, 0, 0, 1);
     margin-top: 0.5in;
@@ -167,14 +172,14 @@ header {
 
 header:after {
     clear: both;
-    content: "";
+    content: '';
     display: table;
 }
 
 header h1 {
     background: #000;
     border-radius: 0.25em;
-    color: #FFF;
+    color: #fff;
     margin: 0 0 1em;
     padding: 0.5em 0;
 }
@@ -191,7 +196,8 @@ header address p {
     margin: 0 0 0.25em;
 }
 
-header span, header img {
+header span,
+header img {
     display: block;
     float: right;
 }
@@ -210,7 +216,7 @@ header img {
 
 header input {
     cursor: pointer;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
     height: 100%;
     left: 0;
     opacity: 0;
@@ -243,7 +249,8 @@ header input {
         display: none;
     }
 
-    .add, .cut {
+    .add,
+    .cut {
         display: none;
     }
 
@@ -255,7 +262,6 @@ header input {
         padding: 0;
         margin: 0;
     }
-
 }
 
 @page {

@@ -29,17 +29,23 @@ export class ClientsUpdateComponent implements OnInit {
     }
 
     save() {
-        this.isSaving = true;
-        if (this.clients.id !== undefined) {
-            this.subscribeToSaveResponse(this.clientsService.update(this.clients));
+        let regexp = new RegExp('^(?:19|20)?d{2}(?:[01235678]dd(?<!(?:000|500|36[7-9]|3[7-9]d|86[7-9]|8[7-9]d)))d{4}(?:[vVxX])$');
+
+        if (regexp.test(this.clients.nicNumber)) {
+            this.isSaving = true;
+            if (this.clients.id !== undefined) {
+                this.subscribeToSaveResponse(this.clientsService.update(this.clients));
+            } else {
+                this.subscribeToSaveResponse(this.clientsService.create(this.clients));
+            }
         } else {
-            this.subscribeToSaveResponse(this.clientsService.create(this.clients));
+            alert('Please enter a valid NIC Number');
         }
     }
 
     private subscribeToSaveResponse(result: Observable<HttpResponse<IClients>>) {
-    result.subscribe((res: HttpResponse<IClients>) => this.onSaveSuccess(), (res: HttpErrorResponse) => this.onSaveError());
-}
+        result.subscribe((res: HttpResponse<IClients>) => this.onSaveSuccess(), (res: HttpErrorResponse) => this.onSaveError());
+    }
 
     private onSaveSuccess() {
         this.isSaving = false;
